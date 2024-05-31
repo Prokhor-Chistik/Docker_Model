@@ -27,7 +27,7 @@ def create_app():
                 filename = secure_filename(file.filename)
                 
                 # Store imported file locally
-                new_filename = f'{filename.split(".")[0]}_{str(datetime.now())}.csv'
+                new_filename = f'{filename.split(".")[0]}_{str(datetime.now().strftime("%Y-%m-%d-%H-%M-%S"))}.csv'
                 save_location = os.path.join('input', new_filename)
                 file.save(save_location)
                 

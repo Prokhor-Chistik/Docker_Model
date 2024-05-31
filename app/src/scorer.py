@@ -1,6 +1,6 @@
 import pandas as pd
 
-import app.models.cb_model as cb_model
+import models.cb_model as cb_model
 
 # Make prediction
 def make_pred(dt, path_to_file):
